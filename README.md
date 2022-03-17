@@ -27,7 +27,7 @@ b. Usar **nomenclatura BEM** para estilos.
 c. Utilizar los estilos de color y textos **creados en Figma**.   
 d. Utilizar 8px GRID para espacios, paddings, margins.  
 e. Si se considera necesario, se pueden utilizar variables.  
-8. **JavaScript**
+8. **JavaScript**  
 a. **No utilizar jQuery**, solamente JS puro ES6.  
 b. Utilizar la nomenclatura **camelCase**.  
 c. Como sugerencia: recomendamos crear una función de *alert* para enviar el formulario (puede ser envío falso, solo una alerta), un Listener de scroll para mostrar/ocultar algún botón o el banner fijo/flotante, click del FAQ/Accordion, abrir y cerrar un modal.
