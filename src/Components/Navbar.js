@@ -8,7 +8,7 @@ const Navbar = () => {
     return(
     <div>
         <h1 className="Hello">
-            hello!
+        Hello
         </h1>
         
     </div>

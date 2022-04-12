@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Inder', sans-serif;
+    font-family: 'Merriweather', serif; 
+}
+
+:root {
+    --indigo : #486DB7;
+    --pink : #f778b9;
+    --purples : #b378ff;
+    --white : #ffffff;
+    --black : #000000;
+}
