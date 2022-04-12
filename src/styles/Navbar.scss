@@ -1,0 +1,15 @@
+@import '../scss/_mixins';
+
+.Hello {
+    color: var(--indigo);
+    font-size: 2rem;
+    @include media(mobile) {
+        color: var(--black);
+    }
+    @include media(tablet) {
+        color: aqua;
+    }
+    @include media(desktop) {
+        color: var(--pink);
+    }
+}

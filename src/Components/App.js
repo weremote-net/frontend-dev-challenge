@@ -1,6 +1,6 @@
 import React from "react";
 import reactDom from "react-dom";
-import '../styles/__settings.css'
+import '../scss/__settings.scss'
 import Navbar from "./Navbar"
 
 const App = () => {

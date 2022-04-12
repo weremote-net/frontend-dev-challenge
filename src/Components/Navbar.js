@@ -2,7 +2,7 @@ import React from "react";
 import reactDom from "react-dom";
 import { Fragment } from "react";
 import logo from '../Assets/logo.png'
-import '../styles/Navbar.css'
+import '../styles/Navbar.scss'
 
 const Navbar = () => {
     return(
