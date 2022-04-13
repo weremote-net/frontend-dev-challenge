@@ -2,12 +2,6 @@
 
 .Slider {
 
-    @include media(mobile) {
-        display: none;
-        width: 0;
-        height: 0;
-    }
-
     @include media(tablet) {
         position: relative;
         width: 100%;
@@ -24,9 +18,6 @@
         height: 40rem;
         border-radius: 10px;
 
-        @include media(mobile) {
-            display: none;
-        }
 
         @include media(tablet) {
             display: flex;
@@ -47,9 +38,6 @@
         user-select: none;
         z-index: 10;
 
-        @include media(mobile) {
-            display: none;
-        }
 
         @include media(tablet) {
             display: block;
@@ -65,9 +53,6 @@
         user-select: none;
         z-index: 10;
 
-        @include media(mobile) {
-            display: none;
-        }
 
         @include media(tablet) {
             display: block;
