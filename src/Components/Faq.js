@@ -11,8 +11,7 @@ const Faq = () => {
             <section className="Faq">
                 <div className="Faq__content">
                     <h1>Su viaje de</h1><span>salud emocional</span><h1>empieza aqui</h1>
-                    <p>conoce nuestros profesionales con licencia</p>
-                    <p>Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad.</p>
+                    <p>conoce nuestros profesionales con licencia, Todos se someten a un proceso seguro de verificación</p>
                 </div>
                 <div className="Faq__accordion">
                     <Accordion />

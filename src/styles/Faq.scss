@@ -5,6 +5,7 @@
     width: 100%;
     height: 40rem;
 
+
     &__content {
         width: 50%;
         border-radius: 4rem;
@@ -13,7 +14,8 @@
         text-align: center;
 
         @include media(mobile) {
-            padding : 4rem
+            padding : 4rem;
+            height: auto;
         }
         
 
@@ -23,6 +25,8 @@
             margin: 2rem;
             background-color: var(--purples);
             text-align: center;
+            height: auto;
+
         }
     }
 
@@ -43,13 +47,13 @@
         font-size: 3rem;
 
         @include media(mobile) {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         
         @include media(tablet) {
             margin-top: 3rem;
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
         }
     }
 
@@ -61,6 +65,7 @@
 
         @include media(mobile) {
             font-size: 1rem;
+            
         }
 
         @include media(tablet) {

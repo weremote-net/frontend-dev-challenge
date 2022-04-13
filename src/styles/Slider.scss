@@ -2,6 +2,8 @@
 
 .Slider {
 
+    padding-top: 2rem;
+
     @include media(tablet) {
         position: relative;
         width: 100%;

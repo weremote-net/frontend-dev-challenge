@@ -1,7 +1,6 @@
 import React from "react";
 import reactDom from "react-dom";
 import { Fragment } from "react";
-import {IoIosRemoveCircleOutline} from 'react-icons/io'
 import {RiArrowDownSFill} from 'react-icons/ri'
 import '../styles/Accordion.scss'
 
