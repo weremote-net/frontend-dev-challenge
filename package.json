@@ -1,0 +1,41 @@
+{
+  "name": "frontend-dev-challenge",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href='https://weremote.net'>     <img src=\"https://weremote.net/wp-content/uploads/2021/04/Logo-WR.svg\" width=\"300\" />   </a> </p> <br />",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bianchi446/frontend-dev-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bianchi446/frontend-dev-challenge/issues"
+  },
+  "homepage": "https://github.com/Bianchi446/frontend-dev-challenge#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-burger-menu": "^2.7.1",
+    "react-dom": "^18.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
