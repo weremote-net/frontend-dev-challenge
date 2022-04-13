@@ -1,11 +1,17 @@
 import React from "react";
 import reactDom from "react-dom";
+import { Fragment } from "react";
 import '../scss/__settings.scss'
 import Navbar from "./Navbar"
+import SideBar from "./SideBar";
 
 const App = () => {
     return(
-        <Navbar />
+        <Fragment>
+            <Navbar />
+        </Fragment>
+       
+       
     )
 }
 
