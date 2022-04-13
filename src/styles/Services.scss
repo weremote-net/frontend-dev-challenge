@@ -1,0 +1,51 @@
+@import '../scss/__mixins';
+
+.Services {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: var(--indigo);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    @include media(mobile) {
+        grid-template-columns: 1fr;
+    }
+
+    @include media(tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item{
+        text-align: center;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    &__item h1 {
+        padding : 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    &__item p {
+        font-size: 1rem;
+        font-weight: 600 bold;
+        margin : 2rem;
+    }
+
+    &__item img {
+       
+        @include media(mobile) {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        @include media(tablet) {
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+ 
+}
