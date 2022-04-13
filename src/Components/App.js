@@ -7,6 +7,7 @@ import SideBar from "./SideBar";
 import Slider from "./Slider"
 import SliderData from "./SliderImagenes";
 import Services from "./Services"
+import TestimonialSlider from "./TestimonialSlider";
 
 const App = () => {
     return(
@@ -14,6 +15,7 @@ const App = () => {
             <Navbar />
             <Slider slides={SliderData}/>
             <Services />
+            <TestimonialSlider slides={SliderData}/>
         </Fragment>
        
        

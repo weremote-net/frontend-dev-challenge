@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import reactDom from "react-dom";
 import { Fragment } from "react";
-import { SliderData } from "./SliderImagenes";
+import { SliderData } from "./SliderTestimonials";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import '../styles/Slider.scss'
+import '../styles/Testimonials.scss'
 
-const Slider = ({slides}) => {
+const TestimonialSlider = ({slides}) => {
 
     const [current, setCurrent] = useState(0);
     const length = slides.length;
@@ -17,8 +17,6 @@ const Slider = ({slides}) => {
     const prevSlide = () => {
         setCurrent(current === 0 ? length -1 : current -1)
     }
-
-    console.log(current)
 
 
     if(!Array.isArray(slides) || slides.length <= 0) {
@@ -43,4 +41,4 @@ const Slider = ({slides}) => {
     )
 }
 
-export default Slider
+export default TestimonialSlider;
