@@ -26,6 +26,16 @@
     &__item h1 {
         padding : 1rem;
         font-size: 1.5rem;
+
+        @include media(mobile) {
+            padding : 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        @include media(tablet) {
+            padding : 1.1rem;
+            font-size: 2.2rem;
+        }
     }
 
 
@@ -33,6 +43,18 @@
         font-size: 1rem;
         font-weight: 600 bold;
         margin : 2rem;
+
+        @include media(mobile) {
+            font-size: 1rem;
+            font-weight: 600 bold;
+            margin : 2rem;
+        }
+
+        @include media(tablet) {
+            font-size: 1.8rem;
+            font-weight: 600 bold;
+            margin : 2rem;
+        }
     }
 
     &__item img {
