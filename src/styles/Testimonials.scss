@@ -1,6 +1,6 @@
 @import '../scss/__mixins';
 
-.Slider {
+.SliderTestimonials {
 
         position: relative;
         width: 100%;
@@ -8,10 +8,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        @include media(mobile) {
-           display: none;
-        }
 
         @include media(mobile) {
             position: relative;

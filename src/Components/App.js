@@ -10,6 +10,7 @@ import Services from "./Services"
 import TestimonialSlider from "./TestimonialSlider";
 import Faq from "./Faq";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const App = () => {
     return(
@@ -20,6 +21,7 @@ const App = () => {
             <TestimonialSlider slides={SliderData}/>
             <Faq />
             <Contact />
+            <Footer />
         </Fragment>
        
        

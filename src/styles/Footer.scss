@@ -1,0 +1,22 @@
+@import '../scss/__mixins';
+
+.SectionFooter {
+    display: inline;
+    width: auto;
+    height: auto;
+    overflow:auto;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0 2rem 0 0;
+    }
+}

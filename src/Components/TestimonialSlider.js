@@ -26,13 +26,13 @@ const TestimonialSlider = ({slides}) => {
 
     return(
         <Fragment>
-            <section className="Slider">
-            <FaArrowAltCircleLeft className="Slider__left--arrow" onClick={prevSlide}/>
-            <FaArrowAltCircleRight className="Slider__right--arrow" onClick={nextSlide}/>
+            <section className="SliderTestimonials">
+            <FaArrowAltCircleLeft className="SliderTestimonials__left--arrow" onClick={prevSlide}/>
+            <FaArrowAltCircleRight className="SliderTestimonials__right--arrow" onClick={nextSlide}/>
             {SliderData.map((slide, index) => {
             return(
-                <div className={index === current ? 'Slider__slide active' : 'slide'} key={index}>
-                {index === current && (<img src={slide.image} alt='imagen 1' className="Slider__image" />)}
+                <div className={index === current ? 'SliderTestimonials__slide active' : 'slide'} key={index}>
+                {index === current && (<img src={slide.image} alt='imagen 1' className="SliderTestimonials__image" />)}
                 </div>
             )
  })}
