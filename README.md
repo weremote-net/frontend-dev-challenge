@@ -18,7 +18,7 @@ Clonar el repositorio
 
 Scss
 ------------------
-__mixins : Contiene la configuracion los breakpoints para el diseno responsive __settings : Configuraciones globales de CSS
+__mixins : Contiene la configuracion de los breakpoints para el diseño responsive __settings : Configuraciones globales de CSS
 
 React
 ----------------------
