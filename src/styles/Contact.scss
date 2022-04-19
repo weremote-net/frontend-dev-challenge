@@ -1,0 +1,71 @@
+@import '../scss/__mixins';
+
+.Contact {
+    width: 100%;
+    padding-top: 8rem;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__forms {
+        width: 50%;
+        padding: 2rem;
+        display: inline;
+        margin-top: 3rem;
+        border: none;
+
+        @include media(mobile) {
+            margin-right: 4rem;
+        }
+
+        @include media(tablet) {
+            padding: 2rem;
+        }
+    }
+
+
+    &__forms input{
+        width: 40vw;
+        margin: 2rem;
+        border-radius: 3rem;
+        padding: 1rem;
+        background-color: var(--indigo);
+        color: black;
+        border: none;
+    }
+
+    &__textarea{
+        width: 50%;
+        padding: 1rem;
+    }
+
+    &__textarea textarea {
+        width: 40vw;
+        height: 60vh;
+        font-size: 2rem;
+
+        @include media(mobile) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__button button {
+        margin-left: 2.5rem;
+        padding: 1rem;
+        background-color: var(--pink);
+        color: black;
+        font-size: 1rem;
+        border: none;
+        border-radius: 1rem;
+        transition: 0.5s;
+    }
+
+    &__button button:hover {
+        background-color: var(--indigo);
+        color: white;
+
+    }
+
+}
