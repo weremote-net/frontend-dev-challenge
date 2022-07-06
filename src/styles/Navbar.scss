@@ -1,0 +1,92 @@
+@import '../scss/__mixins';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+
+    @include media(mobile) {
+        height: 5rem;
+        background-color: var(--pink);
+    }
+
+    @include media(tablet) {
+        background-color: var(--indigo);
+        height: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    &__logo {
+        width: 4rem;
+
+        @include media(mobile) {
+            width: 100%;
+            height: 6rem;
+            margin: auto;
+            display: flex;
+            justify-content: end;
+        }
+
+        @include media(tablet) {
+            display : flex;
+            justify-content: space-between;
+        }
+
+        &__image {
+            display: block;
+
+            @include media(mobile) {
+                padding-bottom: 4rem;
+            }
+
+            @include media(tablet) {
+                display: block;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    &__items a {
+        margin: 0 2rem 2rem 0;
+        color: white;
+        transition: 0.5s ease;
+      
+
+        @include media(mobile) {
+            display: none;
+        }
+        
+        @include media(tablet) {
+            display: flex;
+            font-size: 1rem;
+    
+
+        }
+    }
+
+    &__items a:hover {
+        color: var(--pink);
+    }
+
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
