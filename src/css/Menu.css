@@ -1,0 +1,157 @@
+.menu__container {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  cursor: auto;
+  z-index: 100;
+}
+
+.menu__wrapper {
+  background-color: var(--grey-neutral-1);
+  position: fixed;
+  right: inherit;
+  top: 0;
+  left: 0;
+  cursor: auto;
+  z-index: 100;
+  width: 30rem;
+  height: 100%;
+  transform: translateX(0);
+}
+
+.menu__wrapper-close {
+  left: -100%;
+  transform: translate(-100%);
+  transition: transform 5s ease-in-out;
+
+}
+
+.menu__wrapper-content {
+  display: grid;
+  justify-items: center;
+}
+
+.menu__wrapper-btn__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  padding: 2.5% 0;
+  background-color: white;
+}
+
+.btn__close {
+  background: none;
+  padding: 0;
+  border: none;
+  margin: 0 5%;
+  color: black;
+  cursor: pointer;
+}
+
+.menu__wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+
+}
+
+.logo {
+  height: 3vh;
+  cursor: pointer;
+}
+
+.nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 2vh;
+}
+
+.nav__wrapper-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1vh;
+  padding-top: 5%;
+
+}
+
+.nav__wrapper-subtitle {
+  color: var(--purples-color);
+  font-size: 4vh;
+  text-align: left;
+  padding: 0 3%;
+}
+
+.nav__wrapper-links {
+  margin: 0 2%;
+}
+
+.nav__wrapper-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 3%;
+}
+
+.nav__wrapper-text {
+  text-align: left;
+  font-weight: 600;
+  font-family:var(--font-source-pro) ;
+  font-size: 2vh;
+  letter-spacing: 0.1em;
+  color: black;
+  width: 100%;
+  padding: 1vh 0;
+  cursor: pointer;
+}
+
+.nav_wrapper-icon {
+  font-size: 2rem;
+}
+
+.nav_wrapper-icon:hover {
+  color:var(--indigo-color);
+}
+
+.nav__wrapper-text:hover, .btn__close:hover {
+  color: var(--dark-color);
+}
+
+@media (max-width: 450px) {
+  .menu__wrapper {
+  background-color: var(--grey-neutral-2);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  transform: scaleX(100vw);
+  transition: transform .5s ease;
+  }
+
+  .logo {
+  height: 2rem;
+  }
+
+  .nav__wrapper-subtitle {
+  font-size: 4vh;
+  }
+
+  .nav__wrapper-text {
+    font-size: 3vh;
+  }
+}
+

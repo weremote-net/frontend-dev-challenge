@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7vh 5vw;
+  gap: 3vh;
+}
+
+.footer__aside {
+  height: 100%;
+}
+
+.footer__aside--logo-wrapper {
+  width: 100%;
+}
+
+.footer__aside--logo {
+  height: 2rem;
+}
+
+.footer__aside--mid {
+  height: 100%;
+}
+
+.footer__aside--lines {
+  height: 2vh;
+}
+
+.footer__aside--polities {
+  gap: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__aside--text {
+  color: white;
+  font-family: var(--font-source-pro);
+  font-size: 2.25vh;
+  font-weight: 500;
+}
+
+.footer__aside--text:hover {
+  color: var(--grey-neutral-4);
+}
