@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../../css/Navbar.css"
-import logoImg from "../../../public/images/LMEM-logo.svg"
+import logoImg from "/images/LMEM-logo.svg"
 
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BiSearchAlt } from "react-icons/bi"

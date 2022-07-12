@@ -35,6 +35,7 @@
 .menu__wrapper-content {
   display: grid;
   justify-items: center;
+  padding: 0 5%;
 }
 
 .menu__wrapper-btn__close {
@@ -48,12 +49,7 @@
 }
 
 .btn__close {
-  background: none;
-  padding: 0;
-  border: none;
-  margin: 0 5%;
-  color: black;
-  cursor: pointer;
+  display: none;
 }
 
 .menu__wrapper-header {
@@ -65,7 +61,7 @@
 }
 
 .logo {
-  height: 3vh;
+  height: 5vh;
   cursor: pointer;
 }
 
@@ -131,7 +127,7 @@
   color: var(--dark-color);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .menu__wrapper {
   background-color: var(--grey-neutral-2);
   position: fixed;
@@ -141,6 +137,16 @@
   transform: scaleX(100vw);
   transition: transform .5s ease;
   }
+
+  .btn__close {
+    display: block;
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0 5%;
+    color: black;
+    cursor: pointer;
+} 
 
   .logo {
   height: 2rem;

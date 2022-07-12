@@ -39,24 +39,24 @@ button {
 }
 
 a {
-      text-decoration: none;
+  text-decoration: none;
 }
 
 li{
-    list-style: none
+  list-style: none
 }
 
 link{
-    text-decoration: none
+  text-decoration: none
 }
 
 a{
-    text-decoration: none
+  text-decoration: none
 }
 
 button, input, textarea, select {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 /*.button__send {

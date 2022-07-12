@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../css/Menu.css"
-import imgLogo from "../../public/images/LMEM-logo.svg"
+import imgLogo from "/images/LMEM-logo.svg"
 
 import { VscChromeClose, VscArrowRight } from "react-icons/vsc"
 
@@ -13,7 +13,7 @@ const Menu = () => {
 
   return (
     <aside className="menu__container">
-      <section className="menu__wrapper">
+      <section className="menu__wrapper" onClick={stop}>
         <div className="menu__wrapper-btn__close">
           <button onClick={closeMenu} className="btn__close">
             {menu ? (
@@ -25,7 +25,7 @@ const Menu = () => {
             <img className="logo" src={imgLogo} alt="logo" />
           </header>
         </div>
-        <article className="menu__wrapper-content" onClick={stop}>
+        <article className="menu__wrapper-content">
           <nav className="nav__wrapper">
             <div className="nav__wrapper-container">
               <h2 className="nav__wrapper-subtitle">Embarazo</h2>

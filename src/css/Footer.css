@@ -9,23 +9,36 @@
 }
 
 .footer__aside {
-  height: 100%;
+  width: 100%;
 }
 
 .footer__aside--logo-wrapper {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
 }
 
 .footer__aside--logo {
-  height: 2rem;
+  height: 5vh;
+}
+
+.footer__aside-paragraph {
+  display: none;
+}
+
+.footer__aside-txt {
+  display: none;
 }
 
 .footer__aside--mid {
-  height: 100%;
+  width: 100vw;
 }
 
 .footer__aside--lines {
-  height: 2vh;
+  height: 1vh;
+  width: 100%;
 }
 
 .footer__aside--polities {
@@ -36,13 +49,43 @@
   text-align: center;
 }
 
-.footer__aside--text {
+.footer__aside-text {
   color: white;
   font-family: var(--font-source-pro);
-  font-size: 2.25vh;
+  font-size: 1.5vh;
   font-weight: 500;
 }
 
-.footer__aside--text:hover {
+.footer__aside-text:hover {
   color: var(--grey-neutral-4);
+}
+
+@media (min-width: 780px) {
+  .footer__aside-paragraph {
+  width: 50%;
+  display: block;
+}
+
+.footer__aside-txt {
+  display: block;
+  font-family: var(--font-merriweather);
+  font-size: 1.5vh;
+  color: white;
+  text-align: left;
+  }
+
+  .footer__aside--polities {
+  gap: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+.footer__aside-text {
+  color: white;
+  font-family: var(--font-source-pro);
+  font-size: 2vh;
+  font-weight: 500;
+  }
 }

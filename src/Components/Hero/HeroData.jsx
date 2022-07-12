@@ -1,24 +1,116 @@
-import React from 'react'
-import '../../css/HeroData.css'
+import React, { useState, useEffect } from "react"
+import "../../css/Hero.css"
+import { HeroImg } from "./HeroImg"
+import HeroElements from "./HeroElements"
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa"
 
-const HeroData = ({ text1, text2, text3 }) => {
+const ImgSlider = ({ slides }) => {
+  const [currentImg, setCurrentImg] = useState(0)
+  const len = slides.length
+
+  const nextSlide = () => {
+    setCurrentImg(currentImg === len - 1 ? 0 : currentImg + 1)
+  }
+
+  const prevSlide = () => {
+    setCurrentImg(currentImg === 0 ? len - 1 : currentImg - 1)
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      currentImg === len - 1 ? setCurrentImg(0) : setCurrentImg(currentImg + 1)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [currentImg])
+
+  /*   if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  } */
+
   return (
-    <section className='text-button'>
-      <div className='text-wrapper'>
-        <h1 className='textOne'>
-          {text1}
-        </h1>
-        <h3 className='textTwo'>
-          {text2}
-        </h3>
-        <h3 className='textThree'>
-          {text3}
-        </h3>
-        
-      </div>
+    <section className="slider">
+      <FaArrowAltCircleLeft className="slider__left-arrow" onClick={prevSlide} />
+      <FaArrowAltCircleRight className="slider__right-arrow" onClick={nextSlide} />
 
+      {HeroImg.map((slide, index) => {
+        return (
+          <div
+            className={index === currentImg ? "slider__active" : "slider_inactive"}
+            key={index}
+          >
+            {index === currentImg && (
+              <img src={slide.image} alt="healthy food" className="slider__img" />
+            )}
+            <div
+              className={
+                currentImg === 0 ? "slider__txt" : "slider__txt-hidden"
+      }
+            >
+              <HeroElements
+                text="Su viaje de"
+                span="salud emocional"
+                text1="empieza aquí"
+                text2="Conoce a nuestros profesionales con licencia"
+                text3="Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad."
+              />
+            </div>
+            <div
+              className={
+                currentImg === 1 ? "slider__txt" : "slider__txt-hidden"
+              }
+            >
+              <HeroElements
+                text="Su viaje de"
+                span="salud emocional"
+                text1="empieza aquí"
+                text2="Conoce a nuestros profesionales con licencia"
+                text3="Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad."
+              />
+            </div>
+            <div
+              className={
+                currentImg === 2 ? "slider__txt" : "slider__txt-hidden"
+              }
+            >
+              <HeroElements
+                text="Su viaje de"
+                span="salud emocional"
+                text1="empieza aquí"
+                text2="Conoce a nuestros profesionales con licencia"
+                text3="Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad."
+              />
+            </div>
+            <div
+              className={
+                currentImg === 3 ? "slider__txt" : "slider__txt-hidden"
+              }
+            >
+              <HeroElements
+                text="Su viaje de"
+                span="salud emocional"
+                text1="empieza aquí"
+                text2="Conoce a nuestros profesionales con licencia"
+                text3="Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad."
+              />
+            </div>
+            <div
+              className={
+                currentImg === len - 1 ? "slider__txt" : "slider__txt-hidden"
+              }
+            >
+              <HeroElements
+                text="Su viaje de"
+                span="salud emocional"
+                text1="empieza aquí"
+                text2="Conoce a nuestros profesionales con licencia"
+                text3="Todos se someten a un proceso seguro de verificación y acreditación, además de adherirse a estrictos códigos de ética y confidencialidad."
+              />
+            </div>
+          </div>
+        )
+      })}
     </section>
   )
 }
 
-export default HeroData
+export default ImgSlider
