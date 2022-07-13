@@ -47,10 +47,10 @@
 }
 
 .wrapper__txt-three {
-  font-size: 1.75vh;
+  font-size: 1.8vh;
   font-family: var(--font-merriweather);
   text-align: justify;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 @media (max-width: 450px) {
@@ -63,11 +63,11 @@
   }
 
   .wrapper__txt-two {
-    font-size: .9rem;
+    font-size: 2.5vh;
   }
 
   .wrapper__txt-three {
-    font-size: .6rem;
-    font-weight: 100;
+    font-size: 2vh;
+    font-weight: 200;
   }
 }

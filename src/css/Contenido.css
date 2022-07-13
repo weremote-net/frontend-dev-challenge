@@ -1,7 +1,6 @@
 .content__container {
   background-color: #fff;
   padding: 7% 10%;
-
 }
 
 .content__wrapper {
@@ -16,10 +15,18 @@
   align-items: center;
   justify-content: center;
   width: 40%;
+  overflow: hidden;
 }
 
 .content__img {
   width: 40vw;
+  transition: 0.5s;
+  object-fit: cover;
+  margin: 1.1rem;
+}
+
+.content__img:hover {
+  transform: scale(1.2);
 }
 
 .content__wrapper-txt {
@@ -80,15 +87,15 @@
   }
 
   .content__wrapper-txt {
-  gap: 7vh;
+  gap: 6vh;
 }
 
 .content__txt-h1 {
-  font-size: 6vh;
+  font-size: 5vh;
 }
 
 .content__txt-h4, .content__txt-p {
-  font-size: 3vh;
+  font-size: 2.75vh;
 }
 }
 

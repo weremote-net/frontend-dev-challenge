@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--indigo-color);
+  padding: 3%;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--grey-neutral-1);
+  font-weight: 500;
+}
+
+.accordion-simple .active {
+  display: block;
+}
+
+.accordion__faq-answer .inactive{
+  display: none;
+}
+
+.accordion__faq-aside {
+  margin-bottom: 2vh;
+  padding: 0 3%;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.accordion__faq-heading {
+  padding: 5%;
+  background-color: var(--grey-neutral-6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.heading-inactive {
+  padding: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .5rem;
+}
+
+.heading-inactive:hover {
+  background-color: var(--grey-neutral-6);
+  color: white;
+}
+
+.accordion__faq-heading .active-h3 .inactive-h3  {
+  font-family: var(--font-source-pro);
+  font-weight: 800;
+  width: 80%;
+}
+
+.accordion__faq-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+}
+
+.accordion__faq-answer {
+  background-color: var(--grey-neutral-1);
+  border-radius: 0 0 .5rem .5rem;
+}
+
+.accordion__faq-answer .active-p {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5vh;
+  padding: 5%;
+}
+
+.faq__answer-txt {
+  width: 100%;
+  font-family: var(--font-merriweather);
+  font-weight: 800;
+  line-height: 1.25;
+  font-size: .9rem;
+  color: var(--grey-neutral-9);
+}
+
+@media (min-width: 450px) {
+  .container {
+  padding: 5%;
+  gap: 3vh;
+}
+
+.accordion__title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.accordion__faq-aside {
+  margin-bottom: 2.5vh;
+  font-size: 3vh;
+}
+
+.accordion__faq-heading {
+  padding: 5%;
+  gap: 5vw;
+}
+
+.accordion__faq-heading .active-h3 .inactive-h3  {
+  font-family: var(--font-source-pro);
+  font-weight: 600;
+  width: 100%;
+}
+
+.faq-icon {
+  font-size: 2rem;
+}
+
+.faq__answer-txt {
+  font-size: 2vh;
+}
+}

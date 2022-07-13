@@ -19,7 +19,7 @@ const ImgSlider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       currentImg === len - 1 ? setCurrentImg(0) : setCurrentImg(currentImg + 1)
-    }, 2500)
+    }, 2500000)
     return () => clearInterval(interval)
   }, [currentImg])
 
