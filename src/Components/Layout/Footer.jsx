@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="footer__aside-txt">
               La Mente es Maravillosa is a property of Grupo MContigo
             </p>
-            <p className="footer__aside-txt">© 2012 – 2020.</p>
+            <p className="footer__aside-txt">© 2012 &dash; 2020.</p>
             <p className="footer__aside-txt">
               All rights reserved. Los contenidos de esta publicación se
               redactan solo con fines informativos. En ningún momento pueden

@@ -19,7 +19,7 @@ const ImgSlider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       currentImg === len - 1 ? setCurrentImg(0) : setCurrentImg(currentImg + 1)
-    }, 2500000)
+    }, 2500)
     return () => clearInterval(interval)
   }, [currentImg])
 
@@ -29,22 +29,34 @@ const ImgSlider = ({ slides }) => {
 
   return (
     <section className="slider">
-      <FaArrowAltCircleLeft className="slider__left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="slider__right-arrow" onClick={nextSlide} />
+      <FaArrowAltCircleLeft
+        className="slider__left-arrow"
+        onClick={prevSlide}
+      />
+      <FaArrowAltCircleRight
+        className="slider__right-arrow"
+        onClick={nextSlide}
+      />
 
       {HeroImg.map((slide, index) => {
         return (
           <div
-            className={index === currentImg ? "slider__active" : "slider_inactive"}
+            className={
+              index === currentImg ? "slider__active" : "slider_inactive"
+            }
             key={index}
           >
             {index === currentImg && (
-              <img src={slide.image} alt="healthy food" className="slider__img" />
+              <img
+                src={slide.image}
+                alt="HeroPhoto"
+                className="slider__img"
+              />
             )}
             <div
               className={
                 currentImg === 0 ? "slider__txt" : "slider__txt-hidden"
-      }
+              }
             >
               <HeroElements
                 text="Su viaje de"

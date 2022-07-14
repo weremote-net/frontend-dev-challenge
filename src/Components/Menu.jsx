@@ -32,26 +32,20 @@ const Menu = () => {
               <hr />
               <div className="nav__wrapper-links">
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Quiero ser mamá
-                  </p>
+                  <p className="nav__wrapper-text">Quiero ser mamá</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
                 </span>
 
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Voy a ser mamá
-                  </p>
+                  <p className="nav__wrapper-text">Voy a ser mamá</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
                 </span>
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Parto
-                  </p>
+                  <p className="nav__wrapper-text">Parto</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
@@ -63,35 +57,26 @@ const Menu = () => {
               <hr />
               <div className="nav__wrapper-links">
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Quiero ser mamá
-                  </p>
+                  <p className="nav__wrapper-text">Quiero ser mamá</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
                 </span>
 
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Voy a ser mamá
-                  </p>
+                  <p className="nav__wrapper-text">Voy a ser mamá</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
                 </span>
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">
-                    Parto
-                  </p>
+                  <p className="nav__wrapper-text">Parto</p>
                   <div className="nav_wrapper-icon">
                     <VscArrowRight />
                   </div>
-                  
                 </span>
               </div>
             </div>
-            
-            {/* */}
           </nav>
         </article>
       </section>

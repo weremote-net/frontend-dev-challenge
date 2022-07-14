@@ -7,13 +7,17 @@ import { BiSearchAlt } from "react-icons/bi"
 import Menu from "../Menu"
 
 const Navbar = () => {
-  const [menuSidebar, setMenuSidebar] = useState(false);
-  const openSidebar = () => setMenuSidebar(!menuSidebar);
+  const [menuSidebar, setMenuSidebar] = useState(false)
+  const openSidebar = () => setMenuSidebar(!menuSidebar)
 
   return (
     <header className="header-nav">
       <aside className="wrapper__menu">
-        <button type="button" onClick={openSidebar} className="wrapper__menu--btn">
+        <button
+          type="button"
+          onClick={openSidebar}
+          className="wrapper__menu--btn"
+        >
           {menuSidebar ? <Menu /> : null}
           <GiHamburgerMenu />
         </button>
