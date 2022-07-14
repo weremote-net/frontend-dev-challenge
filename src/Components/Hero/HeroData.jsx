@@ -33,10 +33,7 @@ const ImgSlider = ({ slides }) => {
         className="slider__left-arrow"
         onClick={prevSlide}
       />
-      <FaArrowAltCircleRight
-        className="slider__right-arrow"
-        onClick={nextSlide}
-      />
+      
 
       {HeroImg.map((slide, index) => {
         return (
@@ -121,6 +118,10 @@ const ImgSlider = ({ slides }) => {
           </div>
         )
       })}
+      <FaArrowAltCircleRight
+        className="slider__right-arrow"
+        onClick={nextSlide}
+      />
     </section>
   )
 }

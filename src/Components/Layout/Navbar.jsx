@@ -1,14 +1,15 @@
 import React, { useState } from "react"
 import "../../css/Navbar.css"
 import logoImg from "/images/LMEM-logo.svg"
-
 import { GiHamburgerMenu } from "react-icons/gi"
-import { BiSearchAlt } from "react-icons/bi"
 import Menu from "../Menu"
+import Modal from "../Modal"
 
 const Navbar = () => {
   const [menuSidebar, setMenuSidebar] = useState(false)
   const openSidebar = () => setMenuSidebar(!menuSidebar)
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="header-nav">
@@ -28,7 +29,10 @@ const Navbar = () => {
       </aside>
 
       <aside className="wrapper__search">
-        <BiSearchAlt />
+        <button className="primaryBtn" onClick={() => setIsOpen(true)}>
+        Log In
+      </button>
+      {isOpen && <Modal setIsOpen={setIsOpen} isOpen={isOpen} />}
       </aside>
     </header>
   )

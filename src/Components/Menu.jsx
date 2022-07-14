@@ -13,7 +13,7 @@ const Menu = () => {
 
   return (
     <aside className="menu__container">
-      <section className="menu__wrapper" onClick={stop}>
+      <section className="menu__wrapper">
         <div className="menu__wrapper-btn__close">
           <button onClick={closeMenu} className="btn__close">
             {menu ? (
@@ -25,7 +25,7 @@ const Menu = () => {
             <img className="logo" src={imgLogo} alt="logo" />
           </header>
         </div>
-        <article className="menu__wrapper-content">
+        <article className="menu__wrapper-content" onClick={stop}>
           <nav className="nav__wrapper">
             <div className="nav__wrapper-container">
               <h2 className="nav__wrapper-subtitle">Embarazo</h2>
