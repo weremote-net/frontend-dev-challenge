@@ -4,7 +4,8 @@ import Testimonials from "./Components/Testimonials/Testimonials"
 import MenuFAQ from "./Components/FAQ/MenuFAQ"
 import Hero from "./Components/Hero/Hero"
 import Layout from "./Components/Layout/Layout"
-import Formulario from "./Components/Form/Formulario"
+import Formulario from "./Components/Formulario"
+
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <Hero />
         <Content />
         <MenuFAQ />
+        <Testimonials />
         <Formulario />
       </Layout>
-      
     </>
   )
 }

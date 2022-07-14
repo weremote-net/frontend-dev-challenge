@@ -1,16 +1,40 @@
 import React from "react"
-import "../../css/Card.css"
-import People from "./DataCard"
+import data from "./DataCard"
 
-import { FaQuoteRight } from 'react-icons/fa';
-
-const Card = ({ id, image, name, quote, title, personIndex, index }) => {
-  let position = "nextSlide"
-  if(personIndex === index) position = 'activeSlide'
-  if(personIndex === index - 1 || (index === 0 && personIndex === People.length - 1)) position = 'lastSlide'
-
+const Card = ({ activeIndex }) => {
   return (
-    <section className={position} key={id}>
+    <section className="testimonial" key={data}>
+      {data.map((item, index) => (
+        <div
+          key={index}
+          className={index === activeIndex ? "active" : "inactive"}
+        >
+          <figure className="testimonial__image">
+            <img
+              className="testimonial__img"
+              src={item.image}
+              alt={item.name}
+            />
+          </figure>
+          <span className="testimonial__container-text">
+            <h2 className="testimonial__name" src={item.name}>
+              {item.name}
+            </h2>
+            <h3 className="testimonial__text" src={item.testimonial}>
+              {item.testimonial}
+            </h3>
+          </span>
+        </div>
+      ))}
+    </section>
+  )
+}
+
+export default Card
+{
+  /* <article className={position} key={id}>
+
+        <section className={position} key={id}>
       <article className="card__container">
         <aside className="card__container-img">
           <img className="card__img" src={image} alt={name} />
@@ -23,15 +47,5 @@ const Card = ({ id, image, name, quote, title, personIndex, index }) => {
           </p>
         </aside>
       </article>
-    </section>
-  )
+    </section> */
 }
-
-export default Card
-{/* <article className={position} key={id}>
-                <img src={image} alt={name} className="person-img" />
-                <h4>{name}</h4>
-                <p className="title">{title}</p>
-                <p className="text">{quote}</p>
-                <FaQuoteRight className="icon" />
-        </article> */}

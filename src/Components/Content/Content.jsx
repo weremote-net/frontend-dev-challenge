@@ -7,6 +7,7 @@ const Content = () => {
   return (
     <>
       <Contenido
+        id="comunicacion"
         img={ContentImg}
         h1="Comunicación"
         h4="Internet es positivo porque nos une, nos conecta."
@@ -19,6 +20,7 @@ const Content = () => {
       />
       <hr />
       <Contenido
+        id="autoestima"
         img={ImgContent}
         h1="Autoestima"
         p1="Tómate un tiempo para "

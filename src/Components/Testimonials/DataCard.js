@@ -1,32 +1,40 @@
-const People = [
-    {
-      id: 1,
-      image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
-      name: 'maria ferguson',
-      title: 'office manager',
-      quote:'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
-    },
-    {
-      id: 2,
-      image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-      name: 'john doe',
-      title: 'regular guy',
-      quote:'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
-    },
-    {
-      id: 3,
-      image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
-      name: 'peter smith',
-      title: 'product designer',
-      quote:'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
-    },
-    {
-      id: 4,
-      image:'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-      name: 'susan andersen',
-      title: 'the boss',
-      quote:'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
-    },
-  ];
+const data = [
+  {
+    id: 1,
+    name: "Miriam Brito",
+    image: '/images/shirley.png',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+  {
+    id: 2,
+    name: "Miguel Briceño",
+    image: '/images/theo.png',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+  {
+    id: 3,
+    name: "Jimena Salazar",
+    image: '/images/daniel.png',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+  {
+    id: 4,
+    name: "Luis Romero",
+    image: '/images/bryan.jpg',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+  {
+    id: 5,
+    name: "Samantha L",
+    image: '/images/cher.jpg',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+  {
+    id: 6,
+    name: "Julian Marc",
+    image: '/images/daniel.png',
+    testimonial: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In architecto ab odit, cum atque maxime."
+  },
+]; 
   
-  export default People;
+  export default data;

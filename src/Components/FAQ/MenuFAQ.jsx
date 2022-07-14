@@ -18,7 +18,7 @@ const MenuFAQ = () => {
     <>
       <section className="container">
         <div className="container__title">
-          <span className="accordion__title">FAQ</span>
+          <span id="faq" className="accordion__title">FAQ</span>
         </div>
         <div className="accordion__faq">
           {DataFAQ.map((item, index) => (

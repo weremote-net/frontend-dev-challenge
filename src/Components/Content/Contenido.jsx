@@ -1,12 +1,12 @@
 import React from "react"
 import "../../css/Contenido.css"
 
-const Contenido = ({ img, h1, h4, p1, p2, p3, span1, span2, span3 }) => {
+const Contenido = ({ id, img, h1, h4, p1, p2, p3, span1, span2, span3 }) => {
   return (
-    <section className="content__container">
+    <section id={id} className="content__container">
       <div className="content__wrapper">
         <aside className="content__wrapper-img">
-          <img className="content__img" src={img} alt="" />
+          <img className="content__img" src={img} alt="content" />
         </aside>
         <aside className="content__wrapper-txt">
           <h1 className="content__txt-h1">{h1}</h1>

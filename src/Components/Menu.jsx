@@ -28,52 +28,46 @@ const Menu = () => {
         <article className="menu__wrapper-content" onClick={stop}>
           <nav className="nav__wrapper">
             <div className="nav__wrapper-container">
-              <h2 className="nav__wrapper-subtitle">Embarazo</h2>
+              <h2 className="nav__wrapper-subtitle">Contenido</h2>
               <hr />
               <div className="nav__wrapper-links">
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Quiero ser mamá</p>
-                  <div className="nav_wrapper-icon">
+                  <p className="nav__wrapper-text">Comunicación</p>
+                  <a href="#comunicacion" className="nav_wrapper-icon">
                     <VscArrowRight />
-                  </div>
+                  </a>
                 </span>
 
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Voy a ser mamá</p>
-                  <div className="nav_wrapper-icon">
+                  <p className="nav__wrapper-text">Autoestima</p>
+                  <a href="#autoestima" className="nav_wrapper-icon">
                     <VscArrowRight />
-                  </div>
-                </span>
-                <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Parto</p>
-                  <div className="nav_wrapper-icon">
-                    <VscArrowRight />
-                  </div>
+                  </a>
                 </span>
               </div>
             </div>
             <div className="nav__wrapper-container">
-              <h2 className="nav__wrapper-subtitle">Embarazo</h2>
+              <h2 className="nav__wrapper-subtitle">Acerca de</h2>
               <hr />
               <div className="nav__wrapper-links">
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Quiero ser mamá</p>
-                  <div className="nav_wrapper-icon">
+                  <p className="nav__wrapper-text">FAQ</p>
+                  <a href="#faq" className="nav_wrapper-icon">
                     <VscArrowRight />
-                  </div>
+                  </a>
                 </span>
 
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Voy a ser mamá</p>
-                  <div className="nav_wrapper-icon">
+                  <p className="nav__wrapper-text">Testimonios</p>
+                  <a href="#testimonios" className="nav_wrapper-icon">
                     <VscArrowRight />
-                  </div>
+                  </a>
                 </span>
                 <span className="nav__wrapper-position">
-                  <p className="nav__wrapper-text">Parto</p>
-                  <div className="nav_wrapper-icon">
+                  <p className="nav__wrapper-text">Contacto</p>
+                  <a href="#contacto" className="nav_wrapper-icon">
                     <VscArrowRight />
-                  </div>
+                  </a>
                 </span>
               </div>
             </div>
