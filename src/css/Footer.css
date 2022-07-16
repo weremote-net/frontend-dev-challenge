@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7vh 5vw;
+  padding: 5vh 5vw;
+  padding-bottom: 2vh;
   gap: 3vh;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .footer__aside--polities {
-  gap: 3vw;
+  gap: 2.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,12 +53,64 @@
 .footer__aside-text {
   color: white;
   font-family: var(--font-source-pro);
-  font-size: 1.5vh;
+  font-size: 1.2vh;
   font-weight: 500;
 }
 
 .footer__aside-text:hover {
   color: var(--grey-neutral-4);
+}
+
+.footer__aside-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vh;
+  gap: 1.5vh;
+  width: 100%;
+}
+
+.copyright__text {
+  font-size: 1.75vh;
+  font-family: var(--font-source-pro);
+  color: var(--grey-neutral-4);
+}
+
+.copyright__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  gap: 5vw;
+}
+
+.social__wrapper-link {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.socialmedia {
+  width: 1.5rem;
+  transform: .5s;
+}
+
+.socialmedia:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 550px) {
+  .footer__aside-text {
+    font-size: 1rem;
+  }
+
+  .socialmedia {
+    width: 2rem;
+  }
 }
 
 @media (min-width: 780px) {
@@ -66,26 +119,23 @@
   display: block;
 }
 
-.footer__aside-txt {
-  display: block;
-  font-family: var(--font-merriweather);
-  font-size: 1.5vh;
-  color: white;
-  text-align: left;
-  }
+  .footer__aside-txt {
+    display: block;
+    font-family: var(--font-merriweather);
+    font-size: 1.5vh;
+    color: white;
+    text-align: left;
+    }
 
   .footer__aside--polities {
-  gap: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    gap: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-.footer__aside-text {
-  color: white;
-  font-family: var(--font-source-pro);
-  font-size: 2vh;
-  font-weight: 500;
+  .footer__aside-text {
+    font-size: 2vh;
   }
 }

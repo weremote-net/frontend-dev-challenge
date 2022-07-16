@@ -28,18 +28,18 @@
 }
 
 .wrapper__txt-one {
-  font-size: 4vh;
-  font-weight: 700;
+  font-size: 4.5vh;
+  font-weight: 600;
 }
 
 .wapper__txt-span {
   color: var(--pink-color);
-  font-size: 4vh;
-  font-weight: 700;
+  font-size: 4.5vh;
+  font-weight: 600;
 }
 
 .wrapper__txt-two {
-  font-size: 2.5vh;
+  font-size: 3vh;
   text-align: center;
   font-weight: 600;
   font-family: var(--font-source-pro);
@@ -47,19 +47,19 @@
 }
 
 .wrapper__txt-three {
-  font-size: 1.8vh;
+  font-size: 2.5vh;
   font-family: var(--font-merriweather);
   text-align: justify;
-  font-weight: 200;
+  font-weight: 400;
 }
 
-@media (max-width: 450px) {
+@media (max-width:600px) {
   .section__wrapper-one {
     gap: 1vw;
   }
 
   .wrapper__txt-one, .wapper__txt-span  {
-    font-size: 3.5vh;
+    font-size: 3.75vh;
   }
 
   .wrapper__txt-two {
@@ -67,7 +67,7 @@
   }
 
   .wrapper__txt-three {
-    font-size: 2vh;
+    font-size: 1.75vh;
     font-weight: 200;
   }
 }

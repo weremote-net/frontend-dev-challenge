@@ -1,9 +1,11 @@
 import React from "react"
 import data from "./DataCard"
+import '../../css/Testimonials.css'
 
 const Card = ({ activeIndex }) => {
   return (
-    <section className="testimonial" key={data}>
+    <section id='testimonios' className="testimonial" key={data}>
+            TESTIMONIOS
       {data.map((item, index) => (
         <div
           key={index}
@@ -17,10 +19,10 @@ const Card = ({ activeIndex }) => {
             />
           </figure>
           <span className="testimonial__container-text">
-            <h2 className="testimonial__name" src={item.name}>
+            <h2 className="testimonial__name">
               {item.name}
             </h2>
-            <h3 className="testimonial__text" src={item.testimonial}>
+            <h3 className="testimonial__text">
               {item.testimonial}
             </h3>
           </span>

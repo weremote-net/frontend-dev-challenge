@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   height: 70vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +40,7 @@
   right: 2vw;
   font-size: 5vh;
   color: var(--indigo-color); 
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
 }

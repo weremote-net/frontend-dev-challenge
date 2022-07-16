@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import "../../css/Hero.css"
+import "../../css/Testimonials.css"
 import { HeroImg } from "./HeroImg"
 import HeroElements from "./HeroElements"
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa"
+import { FcPrevious, FcNext } from "react-icons/fc";
 
 const ImgSlider = ({ slides }) => {
   const [currentImg, setCurrentImg] = useState(0)
@@ -26,15 +27,11 @@ const ImgSlider = ({ slides }) => {
   /*   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   } */
-
+  
   return (
     <section className="slider">
-      <FaArrowAltCircleLeft
-        className="slider__left-arrow"
-        onClick={prevSlide}
-      />
-      
-
+      <FcPrevious className="slider__left-arrow" />
+      <FcNext className="slider__right-arrow" />
       {HeroImg.map((slide, index) => {
         return (
           <div
@@ -44,11 +41,7 @@ const ImgSlider = ({ slides }) => {
             key={index}
           >
             {index === currentImg && (
-              <img
-                src={slide.image}
-                alt="HeroPhoto"
-                className="slider__img"
-              />
+              <img src={slide.image} alt="HeroPhoto" className="slider__img" />
             )}
             <div
               className={
@@ -118,10 +111,6 @@ const ImgSlider = ({ slides }) => {
           </div>
         )
       })}
-      <FaArrowAltCircleRight
-        className="slider__right-arrow"
-        onClick={nextSlide}
-      />
     </section>
   )
 }

@@ -1,11 +1,8 @@
 import React from "react";
 
-function Arrows({ prevElement, nextElement }) {
+function ArrowRight({ nextElement }) {
     return (
         <div className="arrows">
-            <span className="prev" onClick={prevElement}>
-                &#10094;
-            </span>
             <span className="next" onClick={nextElement}>
                 &#10095;
             </span>
@@ -13,4 +10,4 @@ function Arrows({ prevElement, nextElement }) {
     )
 }
 
-export default Arrows
+export default ArrowRight
