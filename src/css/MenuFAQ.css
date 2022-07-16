@@ -36,7 +36,7 @@
 
 .accordion__faq-heading {
   padding: 5%;
-  background-color: var(--grey-neutral-6);
+  background-color: var(--grey-neutral-5);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@
 }
 
 .heading-inactive:hover {
-  background-color: var(--grey-neutral-6);
+  background-color: var(--grey-neutral-5);
   color: white;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .accordion__faq-answer {
-  background-color: var(--grey-neutral-1);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   border-radius: 0 0 .5rem .5rem;
 }
 

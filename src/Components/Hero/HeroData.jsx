@@ -30,8 +30,8 @@ const ImgSlider = ({ slides }) => {
   
   return (
     <section className="slider">
-      <FcPrevious className="slider__left-arrow" />
-      <FcNext className="slider__right-arrow" />
+      <FcPrevious className="slider__left-arrow" onClick={prevSlide} />
+      <FcNext className="slider__right-arrow" onClick={nextSlide} />
       {HeroImg.map((slide, index) => {
         return (
           <div

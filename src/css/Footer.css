@@ -68,7 +68,7 @@
   align-items: center;
   padding-top: 1vh;
   gap: 1.5vh;
-  width: 100%;
+  width: 50vw;
 }
 
 .copyright__text {
@@ -81,8 +81,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   height: 7vh;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .social__wrapper-link {
@@ -100,7 +101,7 @@
 }
 
 .socialmedia:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 @media (min-width: 550px) {
