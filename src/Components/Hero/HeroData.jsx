@@ -20,7 +20,7 @@ const ImgSlider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       currentImg === len - 1 ? setCurrentImg(0) : setCurrentImg(currentImg + 1)
-    }, 2500)
+    }, 20000)
     return () => clearInterval(interval)
   }, [currentImg])
 
@@ -36,7 +36,7 @@ const ImgSlider = ({ slides }) => {
         return (
           <div
             className={
-              index === currentImg ? "slider__active" : "slider_inactive"
+              index === currentImg ? "slider__active" : "slider__inactive"
             }
             key={index}
           >

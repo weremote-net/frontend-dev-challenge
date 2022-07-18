@@ -1,35 +1,28 @@
 .menu__container {
   background-color: rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
   top: 0;
   left: 0;
-  position: fixed;
   cursor: auto;
-  z-index: 100;
+  z-index: 10;
 }
 
 .menu__wrapper {
+    transition: .5s;
   background-color: var(--grey-neutral-1);
-  position: fixed;
   right: inherit;
   top: 0;
   left: 0;
   cursor: auto;
-  z-index: 100;
   width: 30rem;
   height: 100%;
-  transform: translateX(0);
 }
 
 .menu__wrapper-close {
-  left: -100%;
   transform: translate(-100%);
-  transition: transform 5s ease-in-out;
-
 }
 
 .menu__wrapper-content {
